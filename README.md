@@ -12,7 +12,7 @@ docker run --rm \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v "$PWD:$PWD" \
     -w="$PWD" \
-    heroku
+    deargle/heroku-cli:latest
 ```
 
 * `docker.sock` is mounted so that `docker-cli` can work
@@ -28,7 +28,7 @@ echo alias heroku="'"''docker run --rm \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v "$PWD:$PWD" \
     -w="$PWD" \
-    heroku'"'" >> ~/.bashrc
+    deargle/heroku-cli:latest'"'" >> ~/.bashrc
 
 . ~/.bashrc
 ```
