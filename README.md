@@ -22,7 +22,7 @@ docker run --rm \
 Make a handy-dandy alias:
 
 ```
-echo alias heroku="'"''docker run --rm \
+echo alias heroku="'"'docker run --rm \
     -e HEROKU_API_KEY=$HEROKU_API_KEY \
     -e HOME="$PWD" \
     -v /var/run/docker.sock:/var/run/docker.sock \
